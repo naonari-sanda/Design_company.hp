@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#main ul {
+	width: 90rem;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+}
+
+#main li {
+	width: 30rem;
+	padding: 2rem 0;
+	border: 2px solid #f4f6f8;
+	border-radius: 2rem 2rem 0 0;
+		display: flex;
+	justify-content: center;
+	align-content: center;opacity: 1;
+	font-weight: bold;
+	transition: all .8s;
+	text-align: center;
+	    color: #333333;
+	line-height: 2.4rem;
+	font-size: 1.5rem;
+}
+
+	#main .dtp {
+		padding-top: 3rem;
+	}
+
+#main .page-inner {
+	width: 90rem;
+	margin: 0 auto;
+}
+#main .panel {
+	display: none;
+	width: 90%;
+	margin: 0 auto;
+	transition: all .8s;
+}
+#main .tab.is-active {
+	color: #000;
+	background-color: #f4f6f8;
+	border-radius: 2rem 2rem 0 0;
+	transition: all .8s;
+}
+#main .panel1-group {
+		background-color: #f4f6f8;
+}
+#main .panel.is-show{
+	display: block;
+	color: #000;
+	transition: all .8s;
+}
+#main table {
+	 border-collapse:collapse;
+	overflow: hidden;
+}
+
+#main th {
+	font-size: 1.5rem;
+	color: #333333;
+	width: 30%;
+	border-bottom: 1px solid #dddddd;
+	text-align: center;
+}
+
+#main td {
+	width: 70%;
+	padding: 4rem 4rem;
+	font-size: 1.5rem;
+	border-bottom: 1px solid #dddddd;
+}
+/********************************************************************* タブレット */
+@media only screen and (max-width: 960px) {
+ 
+	section:not(first-child) {
+  padding-top: 22rem;
+  width: 100%;
+  margin: 0 auto;
+}
+	/************************************************** PRICE */
+	#main ul {
+	width: 100%;
+		margin: 0 auto;
+}
+	#main .page-inner {
+	width: 90%;
+}
+	#main li {
+	color: #000;
+	width: 33.33%;
+	border: 2px solid #f4f6f8;
+	border-radius: 2rem 2rem 0 0;
+		display: flex;
+	justify-content: center;
+	align-content: center;opacity: 1;
+	
+}
+	#main td {
+	width: 70%;
+	padding: 3rem 0;
+		padding-left: 10rem;
+	font-size: 1.5rem;
+	border-bottom: 1px solid #dddddd;
+}
+}
+/********************************************************************* 720px */
+@media only screen and (max-width: 720px) {
+
+}
+
+/********************************************************************* スマートフォン */
+@media only screen and (max-width: 560px) {
+
+	#main li {
+	padding: 1.5rem 0;
+	border: 2px solid #f4f6f8;
+	border-radius: 2rem 2rem 0 0;
+		display: flex;
+	justify-content: center;
+	align-content: center;opacity: 1;
+	font-weight: bold;
+	transition: all .8s;
+	font-size: 1.2rem;
+		line-height: 1.4;
+		    color: #333333;
+}
+	#main .dtp {
+		padding-top: 2.5rem;
+	}
+#main table {
+	 border-collapse:collapse;
+	overflow: hidden;
+}
+
+#main th {
+	font-size: 1.5rem;
+	color: #333333;
+	width: 35%;
+	border-bottom: 1px solid #dddddd;
+	text-align: center;
+}
+
+#main td {
+	width: 65%;
+	padding: 3rem 0;
+	padding-left: 2rem;
+	font-size: 1.5rem;
+	border-bottom: 1px solid #dddddd;
+}
+}

@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* CSS Document */
+#main .service-select {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  width: 100rem;
+  margin: 0 auto;
+}
+#main .service-select .tab-box {
+  width: 20rem;
+  height: 15rem;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  margin: 0 .5rem;
+}
+#main .service-select .tab-box.is-active {
+  border: 5px solid;
+  border-image: linear-gradient(to right, #52a0fd 0%, #00e2fa 80%, #00e2fa 100%);
+  border-image-slice: 1;
+}
+#main .service-select .tab-box img {
+  display: block;
+  width: 40%;
+  height: 40%;
+  margin: 3rem auto 1.5rem;
+}
+#main .service-select .tab-box h3 {
+  display: block;
+  font-size: 1.8rem;
+}
+#main .page-inner {
+  margin-top: 3rem;
+  border-top: 1px solid #000;
+  width: 100rem;
+  padding-top: 4rem;
+}
+#main .page-inner .menu {
+  padding: 0 2rem;
+  display: none;
+}
+#main .page-inner .menu.is-show {
+  display: block;
+}
+#main .page-inner .menu h2 {
+  font-size: 5rem;
+  text-align: left;
+  font-weight: bold;
+}
+#main .page-inner .menu h2 span {
+  font-size: 1.5rem;
+  color: #666;
+  letter-spacing: .1rem;
+  margin-left: 2rem;
+  font-weight: normal;
+}
+#main .page-inner .menu h4 {
+  text-align: left;
+  margin-bottom: 8rem;
+}
+#main .page-inner .menu p {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+#main .page-inner .menu h5 {
+  border-bottom: 1px solid #000;
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+/******************************************** work flow*/
+#work-flow h2 {
+  margin-bottom: 0;
+}
+#work-flow .page-inner p {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+	    line-height: 2;
+}
+#work-flow .page-inner .step {
+  padding-top: 10rem;
+  position: relative;
+}
+#work-flow .page-inner .step .step-title {
+  position: relative;
+  margin-bottom: 5rem;
+  background-color: #d7f7f9;
+}
+#work-flow .page-inner .step h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 5rem;
+  text-align: left;
+  padding-left: 8rem;
+  margin-bottom: 5rem;
+  background-color: #d7f7f9;
+  border-image-slice: 1;
+  color: #707070;
+}
+#work-flow .page-inner .step span {
+  font-size: 2.5rem;
+  padding-left: 2rem;
+}
+#work-flow .page-inner .step p {
+  text-align: left;
+  padding: 0 3rem;
+}
+#work-flow .page-inner .step .arrow {
+  margin: 0 auto;
+  width: 2.5em;
+}
+#work-flow .page-inner .step i {
+  font-size: 4rem;
+  color: #444444;
+}
+/********************************************************************* タブレット */
+@media only screen and (max-width: 960px) {
+  /******************************************** service  */
+  #main .service-select {
+    width: 100%;
+    padding: 0 3rem;
+  }
+  #main .service-select .tab-box {
+    width: 20rem;
+    height: 15rem;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    margin: 0 .5rem;
+  }
+  #main .service-select .tab-box h3 {
+    margin-bottom: 0;
+  }
+  #main .service-select .tab-box img {
+    display: block;
+    width: 40%;
+    height: 40%;
+    margin: 15% auto 1.5rem;
+  }
+  #main .page-inner {
+    width: 95%;
+  }
+  /******************************************** work flow*/
+  #work-flow .page-inner .step h3 {
+    font-size: 3.5rem;
+    padding: 2rem 6rem;
+    padding-right: 0;
+	  margin-bottom: 2rem;
+  }
+  #work-flow .page-inner .step {
+    padding-top: 8rem;
+    position: relative;
+  }
+  #work-flow .page-inner .step p {
+  }
+}
+/********************************************************************* スマートフォン */
+@media only screen and (max-width: 560px) {
+	
+	  /******************************************** service  */
+	#main .page-inner {
+  margin-top: 1.5rem;
+  border-top: 1px solid #000;
+  width: 100rem;
+  padding-top: 4rem;
+}
+  #main .service-select {
+    width: 95%;
+    margin: 0 auto;
+	  padding: 0;
+  }
+  #main .service-select .tab-box {
+	  position: relative;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    margin: 0 .2rem;
+  }
+	#main .service-select .tab-box:after {
+		content: '';
+		display: block;
+		padding-top: 100%;
+	}
+  #main .service-select .tab-box h3 {
+	    position: absolute;
+	  right: 0;
+	  bottom: 10%;
+	  left: 0;
+    margin-bottom: 0;
+	  font-size: .8rem;
+	  font-weight: normal;
+	  letter-spacing: .1rem;
+	
+  }
+  #main .service-select .tab-box img {
+	  position: absolute;
+	top: 0;
+	  bottom: 0;
+	  right: 0;
+	  left: 0;
+    display: block;
+    width: 40%;
+    height: 40%;
+    margin: 15% auto 1.5rem;
+  }
+  #main .page-inner {
+    width: 95%;
+  }
+	#main .page-inner .menu h2 span {
+  font-size: 1.7rem;
+  color: #666;
+  letter-spacing: .1rem;
+  margin-left: 2rem;
+  font-weight: normal;
+}
+	#main .page-inner .menu h5 {
+  width: 9rem;
+}
+	  /******************************************** work flow*/
+  #work-flow .page-inner .step h3 {
+    font-size: 3.2rem;
+    padding: 2rem 3rem;
+    padding-right: 0;
+	  margin-bottom: 2rem;
+  }
+  #work-flow .page-inner .step {
+    padding-top: 5rem;
+    position: relative;
+  }
+  #work-flow .page-inner .step p {
+  padding: 0 1rem;
+}
+}

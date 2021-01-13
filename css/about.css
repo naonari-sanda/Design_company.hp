@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Document */
+#main p {
+	text-align: center;
+}
+
+#main table {
+	 border-collapse:collapse;
+}
+#main tr {
+/*		border-top: 1px solid #dddddd;*/
+}
+#main th {
+	font-size: 1.5rem;
+	color: #333333;
+	width: 30%;
+	padding: 4rem 4rem;
+	border-top: 1px solid #dddddd;
+	text-align: left;
+}
+#main .about {
+	margin-bottom: 27rem;
+}
+#main td {
+	width: 70%;
+	padding: 4rem 4rem;
+	font-size: 1.5rem;
+	border-top: 1px solid #dddddd;
+	padding-left: 0;
+}
+/********************************************************************* タブレット */
+@media only screen and (max-width: 960px) {
+
+	section:not(first-child) {
+  padding-top: 22rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+}
+/********************************************************************* 720px */
+@media only screen and (max-width: 720px) {
+
+}
+
+/********************************************************************* スマートフォン */
+@media only screen and (max-width: 560px) {
+
+	  /******************************************** footer*/
+#main th {
+	font-size: 1.5rem;
+	color: #333333;
+	width: 30%;
+	padding: 4rem 1.5rem;
+	border-top: 1px solid #dddddd;
+	text-align: left;
+}
+#main .about {
+	margin-bottom: 10rem;
+}
+#main td {
+	width: 70%;
+	padding: 4rem 1rem;
+	font-size: 1.5rem;
+	border-top: 1px solid #dddddd;
+	padding-left: 0;
+}
+}

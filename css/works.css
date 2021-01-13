@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+#main p {
+	text-align: center;
+	font-size: 2rem;
+}
+/********************************************************************* タブレット */
+@media only screen and (max-width: 960px) {
+
+
+
+
+}
+/********************************************************************* 720px */
+@media only screen and (max-width: 720px) {
+
+}
+
+/********************************************************************* スマートフォン */
+@media only screen and (max-width: 560px) {
+
+
+}

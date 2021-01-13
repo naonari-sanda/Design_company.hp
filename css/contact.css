@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* CSS Document */
+h2 {
+  margin-bottom: 0;
+}
+#main {
+  background-image: url("../img/ikari_r.svg");
+  background-size: 52rem auto;
+  background-position: 20% 90%;
+  background-repeat: no-repeat;
+  padding-bottom: 20rem;
+}
+.page-inner {}
+.contact-text {
+  margin-bottom: 2rem;
+}
+form {
+  width: 100%;
+  margin: 5rem auto 0;
+}
+.item {
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+.item label {
+  font-size: 1.8rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: block;
+}
+.item label span {
+  color: #FF4A4A;
+  display: inline-block;
+  border: 1px solid #FF4A4A;
+  border-radius: .5rem;
+  font-size: 1rem;
+  padding: .2rem;
+  margin-left: 1rem;
+}
+.item input, textarea {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #fafafa;
+  border: 1px solid #ebebeb;
+  line-height: 2rem
+}
+.item select {
+  padding: 1.5rem 2rem;
+  background-color: #fafafa;
+  border: 1px solid #ebebeb
+}
+.submit {
+  margin: 8rem auto 0;
+  width: 33rem;
+}
+.submit input {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 33rem;
+  height: 4rem;
+  text-align: center;
+  border: 3px solid #000;
+  background-color: #FFFFFF;
+  transition: all .4s;
+  font-size: 1.5rem;
+}
+.submit input:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+/********************************************************************* タブレット */
+@media only screen and (max-width: 960px) {
+ 
+  section:not(first-child) {
+    padding-top: 22rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /************************************************** PRICE */
+  form {
+    width: 90%;
+  }
+}
+/********************************************************************* 720px */
+/********************************************************************* スマートフォン */
+@media only screen and (max-width: 560px) {
+	#main {
+  background-image: url("../img/ikari_r.svg");
+  background-size: 70% auto;
+  background-position: 20% 90%;
+  background-repeat: no-repeat;
+  padding-bottom: 20rem;
+}
+  form {
+    width: 100%;
+    margin: 5rem auto;
+  }
+  .item {
+    width: 95%;
+    margin: 0 auto;
+    margin: 0 auto 2rem;
+  }
+  .item input, textarea {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+    line-height: 2rem
+  }
+  .item select {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    background-color: #fafafa;
+    border: 1px solid #ebebeb
+  }
+}
